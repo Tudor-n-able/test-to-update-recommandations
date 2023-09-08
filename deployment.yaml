@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/replicas
+  value: 3
+- op: replace
+  path: /spec/template/metadata/annotations/splunk.com~1index
+  value: "p-edr-dev"
