@@ -39,7 +39,7 @@ public class Test {
                 .
                 getLogger().info(String.
                         format(
-                                "Log message info: orderstatus={%s}, errorcode={%s}, user={%s}, transactionid={%s}", // updated
+                                "Log message info: orderstatus={%s}, errorcode={%s}, user={%s}, transactionid={%s}",
                                 orderstatus
                         )
                 );
@@ -49,13 +49,13 @@ public class Test {
         LoggerFactory
                 .getLogger(Slf4j.class)
                 .warning(
-                    String.format("Log message warn: orderstatus={%s}, errorcode={%d},  transactionid={%d}, user={%d}", // updated
+                    String.format("Log message warn: orderstatus={%s}, errorcode={%d},  transactionid={%d}, user={%d}",
                             orderstatus,
                             errorcode
                     ));
 
 
-        Logger.getLogger().info(String.format("Log message warn:  errorcode={%d}, user={%s}, transactionid={%d}, orderstatus={%s}", // updated
+        Logger.getLogger().info(String.format("Log message warn:  errorcode={%d}, user={%s}, transactionid={%d}, orderstatus={%s}",
                 errorcode,
                 user
         ));
