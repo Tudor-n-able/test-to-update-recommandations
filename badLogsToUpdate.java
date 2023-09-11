@@ -14,7 +14,7 @@ public class Test {
     private Long transactionId = 123L;
 
     void myFunc0() {
-        logger.info(String.format("Log message info: orderstatus={%s}, errorcode={%d}, user={%s}, transactionid={%d}", orderstatus, errorcode, user, transactionId));
+        logger.info(String.format("Log message info: orderstatus={%s}, errorcode={%d}, user={%s}, transactionid={%d}", orderstatus, errorcode, user, transactionid));
     }
 
     void myFunc1() {
@@ -31,7 +31,7 @@ public class Test {
         for(int i = 0; i < a; i++) {
             log.warning(String.format("Log message warn: orderstatus={%s}, errorcode={%d}, user={%s}, transactionid={%d}", orderstatus, errorcode,
                     user,
-                    transactionId
+                    transactionid
             ));
         }
 
@@ -39,7 +39,7 @@ public class Test {
                 .
                 getLogger().info(String.
                         format(
-                                "Log message info: orderstatus={%s}, errorcode={%s}, user={%s}, transactionId={%s}", // updated
+                                "Log message info: orderstatus={%s}, errorcode={%s}, user={%s}, transactionid={%s}", // updated
                                 orderstatus
                         )
                 );
