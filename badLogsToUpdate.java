@@ -51,13 +51,17 @@ public class Test {
                 .warning(
                     String.format("Log message warn: orderstatus={%s}, errorcode={%d},  transactionid={%d}, user={%d}",
                             orderstatus,
-                            errorcode
+                            errorcode,
+                            transactionId,
+                            user
                     ));
 
 
         Logger.getLogger().info(String.format("Log message warn:  errorcode={%d}, user={%s}, transactionid={%d}, orderstatus={%s}",
                 errorcode,
-                user
+                user,
+                transactionId,
+                orderstatus                            
         ));
     }
 
