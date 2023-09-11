@@ -75,7 +75,6 @@ public class Test {
 
         LogManager.getLogManager().getLogger("LogManager").warning("Log message warn: orderstatus=" +
                 test.orderstatus + ", errorcode=" + test.errorcode +
-                ", user=" + test.user + ", transactionid=" +
-                test.transactionId.toString());
+                ", user=" + test.user + ", transactionid=");
     }
 }
