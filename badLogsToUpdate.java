@@ -18,7 +18,7 @@ public class Test {
     }
 
     void myFunc1() {
-        Logger localLogger, localLogger1, localLogger2 = (Logger) LoggerFactory.getLogger(Slf4j.class);
+        Logger localLogger, localLogger1, localLogger2, info = (Logger) LoggerFactory.getLogger(Slf4j.class);
         localLogger.error(String.format("Log message error: orderstatus={%s}, errorcode={%d}, user={%s}, transactionid={%d}",
                 orderstatus,
                 errorcode,
@@ -26,6 +26,13 @@ public class Test {
                 transactionId
         ));
 
+        info.fine(String.format("Log message error: orderstatus={%s}, errorcode={%d}",
+                orderstatus,
+                errorcode,
+                user,
+                transactionId
+        ));
+        
         localLogger1.error(String.format("Log message error: orderstatus={%s}, errorcode={%d}",
                 orderstatus,
                 errorcode,
