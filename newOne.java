@@ -27,13 +27,7 @@ public class Test {
                 transactionId
         ));
 
-        info.fine(String.format("Log message error: orderstatus={%s}, errorcode={%d}",
-                orderstatus,
-                errorcode,
-                user,
-                transactionId
-        ));
-        
+
         localLogger1.error(String.format("Log message error: orderstatus={%s}, errorcode={%d}",
                 orderstatus,
                 errorcode,
